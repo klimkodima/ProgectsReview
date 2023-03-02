@@ -1,7 +1,7 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "react", "react-hooks", "prettier"],
+  "plugins": ["@typescript-eslint", "react", "react-hooks", "prettier", "react-hooks"],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
@@ -35,7 +35,8 @@
     ],
     "linebreak-style": 0,
     "max-len": "warn",
-    "react-hooks/exhaustive-deps": 0,
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "react/react-in-jsx-scope": "off",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
@@ -74,6 +75,12 @@
       {
         "avoidEscape": true
       }
-    ]
+    ],
+    "@typescript-eslint/no-empty-interface": [
+			"error",
+			{
+				"allowSingleExtends": true
+			}
+		]
   }
 }
