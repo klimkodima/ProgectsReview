@@ -1,18 +1,12 @@
 import { FunctionComponent } from 'react';
-import cn from 'classnames';
-import { Header } from './Header';
-import { Sidebar } from './Sidebar';
-import { Footer } from './Footer';
+import { Header } from '../pageElements/Header';
 import { LayoutProps } from './Layout.props';
-import styles from './Layout.module.css';
 
 const Layout = ({ children }: LayoutProps): JSX.Element => {
   return (
-    <div className={styles.wrapper}>
-      <Header className={styles.header} />
-      <Sidebar className={styles.sidebar} />
-      <div className={styles.main}>{children}</div>
-      <Footer className={styles.footer} />
+    <div className='grid-cols-1 p-1'>
+      <Header className='auto-rows-auto' />
+      <div className='auto-rows-fr'>{children}</div>
     </div>
   );
 };

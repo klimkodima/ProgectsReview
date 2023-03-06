@@ -1,7 +1,13 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "react", "react-hooks", "prettier", "react-hooks"],
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-hooks",
+    "prettier",
+    "react-hooks"
+  ],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
@@ -77,10 +83,10 @@
       }
     ],
     "@typescript-eslint/no-empty-interface": [
-			"error",
-			{
-				"allowSingleExtends": true
-			}
-		]
+      "error",
+      {
+        "allowSingleExtends": true
+      }
+    ]
   }
 }

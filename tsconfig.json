@@ -24,6 +24,6 @@
       ".@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "svg.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "svg.d.ts", "**/*.ts", "**/*.tsx", "../DriveMoto/Work/Table copy.tsx"],
   "exclude": ["node_modules"]
 }

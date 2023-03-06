@@ -1,71 +1,22 @@
-:root {
-  --white: #FFF;
-  --grey: rgb(180 180 180 / 95%);
-  --border: #EBEBEB;
-  --green:#1DC37E;
-  --orange: #DCB44E;
-  --red: #DE0000;
-  --blue: #7653FC;
-  --text-primary: #3B434E;
-  --text-secondary: #C4C4C4;
-}
+/* stylelint-disable at-rule-no-unknown */
+@tailwind base;
 
-html {
-  overflow-x: hidden;
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  overflow-x: hidden;
-
-  min-width: 320px;
-  margin: 0;
-  padding: 0;
-
-  font-family: SFProDisplay-Regular, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  color: var(--text-primary);
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-a {
-  display: inline-block;
-  color: inherit;
-  text-decoration: none;
-}  
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+table {
+    border: 1px solid lightgray;
+  }
+  
+  .thead {
+    background-color: rgba(0 0 0 / 10%);
+  }
+  
+  .tb_row {
+    cursor: pointer;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  .tb_row:hover {
+    background-color: rgba(0 0 0 / 5%);
+  }
+  
+@tailwind components;
+@tailwind utilities;

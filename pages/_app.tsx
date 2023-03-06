@@ -35,7 +35,7 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
         <title>Projects Review</title>
         <meta name='description' content='Projects review CMS' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='images/general/favicon.ico' />
       </Head>
       <main className={sfProDisplay.className}>
         <Component {...pageProps} />

@@ -36,6 +36,3 @@ yarn-error.log*
 next-env.d.ts
 .env.local
 .env.test.local
-styles/globals copy.css
-styles/globals tw.css
-styles/Home.module.css

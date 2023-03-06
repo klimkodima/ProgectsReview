@@ -1,0 +1,11 @@
+.fulfiled {
+  color: var(--green);
+}
+
+.closed {
+  color: rgba(0 0 0 / 5%);
+}
+
+.problem {
+  color: var(--red);
+}
