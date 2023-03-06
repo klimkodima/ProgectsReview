@@ -8,10 +8,9 @@ export enum EProjectType {
 
 export enum EProjectStatus {
   Active = 'Активный',
-  Problem = 'Просрочен',
-  Сlosed = 'Закрыт',
   Fulfiled = 'Выполнен',
-  Submit = 'Подан'
+  Submit = 'Подан',
+  Problem = 'Просрочен'
 }
 
 export enum ETeam {
@@ -45,6 +44,7 @@ export interface IProjectModel {
   start_date: Date;
   end_date: Date;
   status: EProjectStatus;
+  closed: boolean;
   price: number;
   updatedAt: Date;
 }
@@ -63,6 +63,7 @@ export interface IProjectModelTable {
   start_date: string;
   end_date: string;
   status: EProjectStatus;
+  closed: boolean;
   price: number;
   updatedAt: string;
   teamsCount: number;

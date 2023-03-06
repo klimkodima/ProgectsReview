@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import { ColumnDef } from '@tanstack/react-table';
 import { IProjectModelTable } from '../../interfaces/project.interface';
 import { Table } from '../../components/Table';
+import { ProjectsActivitiesPercentage } from '../../pageElements/ProjectsActivitiesPercentage';
 import { Button } from '../../components/Button';
 import { ProjectsProps } from './Projects.props';
 
@@ -70,6 +71,7 @@ const Projects = ({ data }: ProjectsProps): JSX.Element => {
 
   return (
     <>
+      <ProjectsActivitiesPercentage />
       <Table columns={columns} data={data} showGlobalFilter />
       <div className='p-7 bg-current bg-sky-500/75'>
         <Button

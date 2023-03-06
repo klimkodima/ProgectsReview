@@ -1,0 +1,42 @@
+.placeholder {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-activities-percentage {
+  border: 2px solid #d7d7d7;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #f6f6f6;
+}
+
+.project-activities-percentage-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+}
+
+.p {
+  margin-bottom: 20px;
+  color: #787878;
+  font-size: 18px;
+}
+
+
+.title {
+  color: #787878;
+  margin: 20px 0 30px ;
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1500px;
+}
